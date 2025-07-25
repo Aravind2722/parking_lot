@@ -1,0 +1,30 @@
+Overview:
+    0. Clarify to align with interviewers thoughts
+    1. Entity or Software system  --> Software System
+    2. Persistence in memory / database --> in memory
+    3. Inputs from APIs, command line, hardcoded --> hardcoded
+
+Requirement gathering:
+Visualize:
+    - User Journey
+    - Physical Structure
+
+
+    1. Parking lot can have multiple floors
+    2. Each floor can have multiple parking spots
+    3. Each parking spot might support some specific vehicle types
+    4. Parking lot can have multiple entry and exit gates
+    5. Parking lot might support various parking spot assignment strategy
+    6. Bill calculation can also be done via multiple strategies
+    7. Payments can be done my multiple modes
+
+Additional Requirements:
+    1. Authentication for user.
+
+
+
+Class Diagram:
+1. Visualize Outer to Inner structures and user journey
+(or)
+2. Find Nouns
+
