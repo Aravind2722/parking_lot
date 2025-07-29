@@ -1,7 +1,7 @@
 package org.example.models;
 
 public enum PaymentMode {
-    UPI,
-    CASH,
+    UPI, // 1
+    CASH, // 2
 
 }

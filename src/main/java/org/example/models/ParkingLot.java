@@ -2,18 +2,16 @@ package org.example.models;
 
 import java.util.List;
 
-public class ParkingLot {
-    private int id;
+public class ParkingLot extends BaseModel {
+    // Columns:
+    // id, name, capacity, parking_lot_status(enum)
+//    private int id;
+    private String name;
+    private int capacity;
     private List<ParkingFloor> parkingFloors;
     private List<Gate> gates;
+    private ParkingLotStatus parkingLotStatus;
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public List<ParkingFloor> getParkingFloors() {
         return parkingFloors;

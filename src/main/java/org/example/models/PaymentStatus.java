@@ -1,7 +1,7 @@
 package org.example.models;
 
 public enum PaymentStatus {
-    SUCCESS,
-    FAILED,
-    PENDING,
+    SUCCESS, // 1
+    FAILED,  // 2
+    PENDING, // 3
 }

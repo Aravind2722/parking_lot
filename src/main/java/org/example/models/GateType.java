@@ -1,6 +1,6 @@
 package org.example.models;
 
 public enum GateType {
-    ENTRY,
-    EXIT,
+    ENTRY, // 1
+    EXIT, // 2
 }

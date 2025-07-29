@@ -1,7 +1,7 @@
 package org.example.models;
 
 public enum VehicleType {
-    SUV,
-    CAR,
-    BIKE,
+    SUV,  // 1
+    CAR,  // 2
+    BIKE, // 3
 }

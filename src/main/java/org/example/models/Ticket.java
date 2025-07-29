@@ -2,8 +2,10 @@ package org.example.models;
 
 import java.util.Date;
 
-public class Ticket {
-    private int id;
+public class Ticket extends BaseModel {
+    // Column:
+    // id, ticket_number, entry_time, vehicle_id(fk), parking_floor_id(fk), parking_spot_id(fk), gate_id(fk), operator_id(fk)
+//    private int id;
     private int tickeNumber;
     private ParkingFloor parkingFloor;
     private ParkingSpot parkingSpot;
@@ -14,14 +16,6 @@ public class Ticket {
     // But we want to store the info of the operator who served this ticket.
     private Vehicle vehicle;
     private Date entryTime;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public int getTickeNumber() {
         return tickeNumber;

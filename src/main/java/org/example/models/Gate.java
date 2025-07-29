@@ -1,26 +1,19 @@
 package org.example.models;
 
-import jdk.incubator.vector.VectorOperators;
+public class Gate extends BaseModel {
+    // Columns:
+    // id, gateNumber, parking_lot_id(fk), operator_id(fk), gate_status(enum), gate_type(enum)
 
-public class Gate {
-    // We dont need separate enitties for entry and exit gates
-    // All the atributes are gonna be same, but the behaviour.
-    // Ticket generation happens at entry gate, paymnets happen at exit gates..
-    // In an Entity based design, we should have to code the behaviours insidde relevant models
-    // In software system, it is the service class that is gonna take care of the behavious. So 2 enitites are not needed
-    private int id;
+    // We don't need separate entities for entry and exit gates
+    // All the attributes are going to be same, but the behaviour.
+    // Ticket generation happens at entry gate, payments happen at exit gates..
+    // In an Entity based design, we should have to code the behaviours inside relevant models
+    // In software system, it is the service class that is going to take care of the behaviors. So 2 entities are not needed
+//    private int id;
     private int gateNumber;
     private Operator operator;
     private GateStatus gateStatus;
     private GateType gateType;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public int getGateNumber() {
         return gateNumber;

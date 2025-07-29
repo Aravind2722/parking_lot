@@ -1,7 +1,9 @@
 package org.example.models;
 
-public class Operator {
-    private int id;
+public class Operator extends BaseModel {
+    // Columns:
+    // id, name, employee_id
+//    private int id;
     private String employeeId;
     private String name;
 
@@ -10,13 +12,6 @@ public class Operator {
     // Morover we dont see a scenario, where we would get gate id from the operator
 
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getEmployeeId() {
         return employeeId;

@@ -1,12 +1,21 @@
-package org.example.models;
+package org.example.dtos;
 
-public class Vehicle extends BaseModel {
-    // Columns:
-    // id, vehicle_number, vehicle_type(enum)
-//    private int id;
+import org.example.models.Gate;
+import org.example.models.Vehicle;
+import org.example.models.VehicleType;
+
+public class GenerateTicketRequestDto {
+    private Long gateId;
     private String vehicleNumber;
     private VehicleType vehicleType;
 
+    public Long getGateId() {
+        return gateId;
+    }
+
+    public void setGateId(Long gateId) {
+        this.gateId = gateId;
+    }
 
     public String getVehicleNumber() {
         return vehicleNumber;
