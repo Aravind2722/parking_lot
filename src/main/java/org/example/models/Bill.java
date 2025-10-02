@@ -9,7 +9,7 @@ public class Bill extends BaseModel {
     private int billNumber;
     private Ticket ticket;
     private Date exitTime;
-    private double amount;
+    private Double amount;
     private Gate gate;
     private Operator operator;
     private String paymentLink; // using which user pays online.
@@ -90,3 +90,4 @@ public class Bill extends BaseModel {
         this.billStatus = billStatus;
     }
 }
+

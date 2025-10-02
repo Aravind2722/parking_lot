@@ -11,7 +11,7 @@ public class BaseModel { // Also called Auditable
     // We need getters and setters here, because only then child classes can use these methods and can have access
     // to Base model PRIVATE attributes
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 

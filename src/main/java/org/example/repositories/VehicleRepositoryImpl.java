@@ -16,7 +16,7 @@ public class VehicleRepositoryImpl implements IVehicleRepository {
 
     @Override
     public Vehicle save(Vehicle vehicle) {
-        if (vehicle.getId() == 0) vehicle.setId(++autoIncId);
+        if (vehicle.getId() == null || vehicle.getId() == 0) vehicle.setId(++autoIncId);
         vehicles.put(vehicle.getId(), vehicle);
         return vehicles.get(vehicle.getId());
     }

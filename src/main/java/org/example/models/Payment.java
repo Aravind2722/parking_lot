@@ -7,7 +7,7 @@ public class Payment extends BaseModel {
     // id, reference_number, amount, time, bill_id(fk), payment_mode(enum), payment_status(enum)
 //    private int id;
     private String referenceNumber;
-    private double amount;
+    private Double amount;
     private Bill bill;
     private PaymentMode paymentMode;
     private Date time;
